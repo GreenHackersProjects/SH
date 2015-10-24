@@ -89,7 +89,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 			// check the current state before we display the screen
 			if (s6.isChecked()) {funOn6(btn);} else {funOff6(btn);}break;
 		case R.id.s7:
-			if (isChecked) {funOn0(btn);} else {funOff0(btn);}
+			if (isChecked) {funOn7(btn);} else {funOff7(btn);}
 			// check the current state before we display the screen
 			if (s7.isChecked()) {funOn7(btn);} else {funOff7(btn);}break;
 		default:
