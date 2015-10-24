@@ -35,6 +35,18 @@
 		}
 		var Alert=new CustomAlert();
 		
+		function closeAll(){			
+			var xmlHttp=new XMLHttpRequest();
+			xmlHttp.open("GET","http://192.168.1.2/index00.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index10.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index20.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index30.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index40.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index50.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index60.php",true);
+			xmlHttp.open("GET","http://192.168.1.2/index70.php",true);
+			
+		}
 	</script>
 		
 	<style type="text/css">
@@ -112,6 +124,26 @@
 			color:#719D40;
 			font-size:22px;
 		}
+		
+		div.closeBox{
+			padding:24px; border:#999 1px dashed;
+		}
+		div.closeBox > div.closeB{
+			font-family:Arial;
+			font-size:17px;
+			background:#333;
+			padding:12px 24px;
+			color:#999;
+			margin-right:10px;
+			text-decoration:none;
+			border-radius:3px;
+			transition:background 0.5s linear 0s, color 0.5s linear 0s;
+		}
+		div.closeBox > div.closeB:hover{
+			background:#6F8A00;
+			color:#FFF;
+		}
+		
 	</style>
 	
 	<body onload="Alert.render()">
@@ -166,6 +198,13 @@
 				<a href="http://192.168.1.2/index7.php">On</a>
 				<a href="http://192.168.1.2/index70.php">OFF</a>
 		</div>
+		
+		<div class="closeBox">
+			<div class="closeB" onclick="closeAll()">Close All</div>
+		</div>
+		
+		
+					
 		</div>
 		
 		</body>

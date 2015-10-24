@@ -32,7 +32,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnCheckedChangeListener {
 	String URL = "http://192.168.1.2/";
-	private Switch s0, s1, s2, s3, s4, s5, s6, s7;
+	private Switch s0, s1, s2, s3, s4, s5, s6, s7,s8;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		s5 = (Switch) findViewById(R.id.s5);
 		s6 = (Switch) findViewById(R.id.s6);
 		s7 = (Switch) findViewById(R.id.s7);
+		s8 = (Switch) findViewById(R.id.s8);
 		s0.setOnCheckedChangeListener(this);
 		s1.setOnCheckedChangeListener(this);
 		s2.setOnCheckedChangeListener(this);
@@ -54,6 +55,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		s5.setOnCheckedChangeListener(this);
 		s6.setOnCheckedChangeListener(this);
 		s7.setOnCheckedChangeListener(this);
+		s8.setOnCheckedChangeListener(this);
 	}
 
 	public void onCheckedChanged(CompoundButton btn, boolean isChecked) {
@@ -92,6 +94,12 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 			if (isChecked) {funOn7(btn);} else {funOff7(btn);}
 			// check the current state before we display the screen
 			if (s7.isChecked()) {funOn7(btn);} else {funOff7(btn);}break;
+		case R.id.s8:
+			if (isChecked) {funOn0(btn);funOn1(btn);funOn2(btn);funOn3(btn);funOn4(btn);funOn5(btn);funOn6(btn);funOn7(btn);} 
+			else {funOff0(btn);funOff1(btn);funOff2(btn);funOff3(btn);funOff4(btn);funOff5(btn);funOff6(btn);funOff7(btn);}
+			// check the current state before we display the screen
+			if (s8.isChecked()) {funOn0(btn);funOn1(btn);funOn2(btn);funOn3(btn);funOn4(btn);funOn5(btn);funOn6(btn);funOn7(btn);} 
+			else {funOff0(btn);funOff1(btn);funOff2(btn);funOff3(btn);funOff4(btn);funOff5(btn);funOff6(btn);funOff7(btn);}
 		default:
 			break;
 		}
