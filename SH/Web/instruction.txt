@@ -1,0 +1,4 @@
+1-put index.html in /var/www folder
+2-username : admin
+3-password: 123
+4-address http://192.168.1.2/index.html

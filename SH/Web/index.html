@@ -1,0 +1,172 @@
+<html>
+	<head></head>
+	<script>
+		function CustomAlert(){
+			this.render=function(){
+		
+				var winW=window.innerWidth;
+				var winH=window.innerHeight;
+				var overLay=document.getElementById('overLay');
+				var box=document.getElementById('box');
+				
+				overLay.style.display="block";
+				box.style.display="block";
+							
+				document.getElementById('head').innerHTML="User Login";
+				document.getElementById('body').innerHTML="<table><tr><td>Name</td><td><input type='text' id='name' /></td></tr>"+"<tr><td>Password</td><td><input type='password' id='pass' /></td></tr></table>";
+				document.getElementById('foot').innerHTML="<button onclick='Alert.login()'>Login</button>";
+			}
+			
+			this.login=function(){
+				
+				var name=document.getElementById('name').value;
+				var pass=document.getElementById('pass').value;
+				
+				if(name="admin" ){
+					if(pass="1234"){
+						document.getElementById('box').style.display="none";
+						document.getElementById('overLay').style.display="none";
+						document.getElementById('text').style.display="block";
+					}
+				}
+				
+
+			}
+		}
+		var Alert=new CustomAlert();
+		
+	</script>
+		
+	<style type="text/css">
+		#text{
+			display:none;
+		}
+		#overLay{
+			display:none;
+			opacity:0.8;
+			position:fixed;
+			top:0px;
+			left:0px;
+			background:#fff;
+			width:100%;
+			z-index:10;
+			
+		}
+		#box{
+			display:none;
+			position:fixed;
+			background:#000;
+			border-radius:7px;
+			top:30%;
+			left:30%;
+			z-index:10;
+			
+		}
+		#box > div {
+			background:#fff;
+			margin:8px;
+			
+		}
+		#box > div #head {
+			background:#666;
+			font-size:19px;
+			padding:10px;
+			color:#ccc;
+		}
+		#box > div #body{
+			background:#fff;
+			padding:20px;
+			color:#fff;
+		}
+		#box > div #foot{
+			background:#666;
+			padding:10px;
+			text-align:right;
+		}
+		
+		body{
+			margin:0px;
+		}
+		div.menu{
+			padding:24px; border:#999 1px dashed;
+		}
+		div.menu > a{
+			font-family:Arial;
+			font-size:17px;
+			background:#333;
+			padding:12px 24px;
+			color:#999;
+			margin-right:10px;
+			text-decoration:none;
+			border-radius:3px;
+			transition:background 0.5s linear 0s, color 0.5s linear 0s;
+		}
+		div.menu > a:hover{
+			background:#6F8A00;
+			color:#FFF;
+		}
+		.MyFont{
+			font-family:Arial,Helvetica;
+			letter-spacing:1px;
+			word-spacing:2px;
+			color:#719D40;
+			font-size:22px;
+		}
+	</style>
+	
+	<body onload="Alert.render()">
+				<div id="overLay">
+			<div id="box">
+				<div>
+					<div id="head"></div>
+					<div id="body"></div>
+					<div id="foot"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="text">
+			<div class="menu">
+				<div class="MyFont">Switch 0</div><br/>
+				<a href="http://192.168.1.2/index0.php">On</a>
+				<a href="http://192.168.1.2/index00.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 1</div><br/>
+				<a href="http://192.168.1.2/index1.php">On</a>
+				<a href="http://192.168.1.2/index10.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 2</div><br/>
+				<a href="http://192.168.1.2/index2.php">On</a>
+				<a href="http://192.168.1.2/index20.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 3</div><br/>
+				<a href="http://192.168.1.2/index3.php">On</a>
+				<a href="http://192.168.1.2/index30.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 4</div><br/>
+				<a href="http://192.168.1.2/index4.php">On</a>
+				<a href="http://192.168.1.2/index40.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 5</div><br/>
+				<a href="http://192.168.1.2/index5.php">On</a>
+				<a href="http://192.168.1.2/index50.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 6</div><br/>
+				<a href="http://192.168.1.2/index6.php">On</a>
+				<a href="http://192.168.1.2/index60.php">OFF</a>
+		</div>
+		<div class="menu">
+				<div class="MyFont">Switch 7</div><br/>
+				<a href="http://192.168.1.2/index7.php">On</a>
+				<a href="http://192.168.1.2/index70.php">OFF</a>
+		</div>
+		</div>
+		
+		</body>
+</html>
