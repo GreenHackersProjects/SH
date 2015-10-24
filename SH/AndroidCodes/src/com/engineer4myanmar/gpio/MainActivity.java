@@ -32,7 +32,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnCheckedChangeListener {
 	String URL = "http://192.168.1.2/";
-	private Switch s0, s1, s2, s3, s4, s5, s6, s7,s8;
+	private Switch s0, s1, s2, s3, s4, s5, s6, s7, s8;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -59,47 +59,185 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 	}
 
 	public void onCheckedChanged(CompoundButton btn, boolean isChecked) {
-		
+
 		switch (btn.getId()) {
 		case R.id.s0:
-			if (isChecked) {funOn0(btn);} else {funOff0(btn);}
+			if (isChecked) {
+				funOn0(btn);
+			} else {
+				funOff0(btn);
+			}
 			// check the current state before we display the screen
-			if (s0.isChecked()) {funOn0(btn);} else {funOff0(btn);}break;
-			
+			if (s0.isChecked()) {
+				funOn0(btn);
+			} else {
+				funOff0(btn);
+			}
+			break;
+
 		case R.id.s1:
-			if (isChecked) {funOn1(btn);} else {funOff1(btn);}
+			if (isChecked) {
+				funOn1(btn);
+			} else {
+				funOff1(btn);
+			}
 			// check the current state before we display the screen
-			if (s1.isChecked()) {funOn1(btn);} else {funOff1(btn);}break;
+			if (s1.isChecked()) {
+				funOn1(btn);
+			} else {
+				funOff1(btn);
+			}
+			break;
 		case R.id.s2:
-			if (isChecked) {funOn2(btn);} else {funOff2(btn);}
+			if (isChecked) {
+				funOn2(btn);
+			} else {
+				funOff2(btn);
+			}
 			// check the current state before we display the screen
-			if (s2.isChecked()) {funOn2(btn);} else {funOff2(btn);}break;
+			if (s2.isChecked()) {
+				funOn2(btn);
+			} else {
+				funOff2(btn);
+			}
+			break;
 		case R.id.s3:
-			if (isChecked) {funOn3(btn);} else {funOff3(btn);}
+			if (isChecked) {
+				funOn3(btn);
+			} else {
+				funOff3(btn);
+			}
 			// check the current state before we display the screen
-			if (s3.isChecked()) {funOn3(btn);} else {funOff3(btn);}break;
+			if (s3.isChecked()) {
+				funOn3(btn);
+			} else {
+				funOff3(btn);
+			}
+			break;
 		case R.id.s4:
-			if (isChecked) {funOn4(btn);} else {funOff4(btn);}
+			if (isChecked) {
+				funOn4(btn);
+			} else {
+				funOff4(btn);
+			}
 			// check the current state before we display the screen
-			if (s4.isChecked()) {funOn4(btn);} else {funOff4(btn);}break;
+			if (s4.isChecked()) {
+				funOn4(btn);
+			} else {
+				funOff4(btn);
+			}
+			break;
 		case R.id.s5:
-			if (isChecked) {funOn5(btn);} else {funOff5(btn);}
+			if (isChecked) {
+				funOn5(btn);
+			} else {
+				funOff5(btn);
+			}
 			// check the current state before we display the screen
-			if (s5.isChecked()) {funOn5(btn);} else {funOff5(btn);}break;
+			if (s5.isChecked()) {
+				funOn5(btn);
+			} else {
+				funOff5(btn);
+			}
+			break;
 		case R.id.s6:
-			if (isChecked) {funOn6(btn);} else {funOff6(btn);}
+			if (isChecked) {
+				funOn6(btn);
+			} else {
+				funOff6(btn);
+			}
 			// check the current state before we display the screen
-			if (s6.isChecked()) {funOn6(btn);} else {funOff6(btn);}break;
+			if (s6.isChecked()) {
+				funOn6(btn);
+			} else {
+				funOff6(btn);
+			}
+			break;
 		case R.id.s7:
-			if (isChecked) {funOn7(btn);} else {funOff7(btn);}
+			if (isChecked) {
+				funOn7(btn);
+			} else {
+				funOff7(btn);
+			}
 			// check the current state before we display the screen
-			if (s7.isChecked()) {funOn7(btn);} else {funOff7(btn);}break;
+			if (s7.isChecked()) {
+				funOn7(btn);
+			} else {
+				funOff7(btn);
+			}
+			break;
 		case R.id.s8:
-			if (isChecked) {funOn0(btn);funOn1(btn);funOn2(btn);funOn3(btn);funOn4(btn);funOn5(btn);funOn6(btn);funOn7(btn);} 
-			else {funOff0(btn);funOff1(btn);funOff2(btn);funOff3(btn);funOff4(btn);funOff5(btn);funOff6(btn);funOff7(btn);}
+			if (isChecked) {
+				funOn0(btn);
+				funOn1(btn);
+				funOn2(btn);
+				funOn3(btn);
+				funOn4(btn);
+				funOn5(btn);
+				funOn6(btn);
+				funOn7(btn);
+				s0.setChecked(true);
+				s1.setChecked(true);
+				s2.setChecked(true);
+				s3.setChecked(true);
+				s4.setChecked(true);
+				s5.setChecked(true);
+				s6.setChecked(true);
+				s7.setChecked(true);
+			} else {
+				funOff0(btn);
+				funOff1(btn);
+				funOff2(btn);
+				funOff3(btn);
+				funOff4(btn);
+				funOff5(btn);
+				funOff6(btn);
+				funOff7(btn);
+				s0.setChecked(false);
+				s1.setChecked(false);
+				s2.setChecked(false);
+				s3.setChecked(false);
+				s4.setChecked(false);
+				s5.setChecked(false);
+				s6.setChecked(false);
+				s7.setChecked(false);
+			}
 			// check the current state before we display the screen
-			if (s8.isChecked()) {funOn0(btn);funOn1(btn);funOn2(btn);funOn3(btn);funOn4(btn);funOn5(btn);funOn6(btn);funOn7(btn);} 
-			else {funOff0(btn);funOff1(btn);funOff2(btn);funOff3(btn);funOff4(btn);funOff5(btn);funOff6(btn);funOff7(btn);}
+			if (s8.isChecked()) {
+				funOn0(btn);
+				funOn1(btn);
+				funOn2(btn);
+				funOn3(btn);
+				funOn4(btn);
+				funOn5(btn);
+				funOn6(btn);
+				funOn7(btn);
+				s0.setChecked(true);
+				s1.setChecked(true);
+				s2.setChecked(true);
+				s3.setChecked(true);
+				s4.setChecked(true);
+				s5.setChecked(true);
+				s6.setChecked(true);
+				s7.setChecked(true);
+			} else {
+				funOff0(btn);
+				funOff1(btn);
+				funOff2(btn);
+				funOff3(btn);
+				funOff4(btn);
+				funOff5(btn);
+				funOff6(btn);
+				funOff7(btn);
+				s0.setChecked(false);
+				s1.setChecked(false);
+				s2.setChecked(false);
+				s3.setChecked(false);
+				s4.setChecked(false);
+				s5.setChecked(false);
+				s6.setChecked(false);
+				s7.setChecked(false);
+			}
 		default:
 			break;
 		}
@@ -112,7 +250,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s0 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s0 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -125,7 +264,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s0 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s0 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -138,7 +278,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s1 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s1 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -151,7 +292,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s1 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s1 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -164,7 +306,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s2 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s2 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -177,7 +320,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s2 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s2 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -190,7 +334,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s3 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s3 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -203,7 +348,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s3 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s3 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -216,7 +362,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s4 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s4 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -229,7 +376,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s4 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s4 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -242,7 +390,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s5is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s5is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -255,7 +404,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s5 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s5 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -268,7 +418,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s6 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s6 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -281,7 +432,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s6 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s6 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -294,7 +446,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s7 is ON", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s7 is ON",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());
@@ -307,7 +460,8 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		try {
 			WebView webview = (WebView) findViewById(R.id.web1);
 			webview.loadUrl(url);
-			Toast.makeText(getApplicationContext(), "s7 is OFF", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "s7 is OFF",
+					Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 
 			Log.e("eeee", e.toString());

@@ -241,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dip"
                     android:layout_weight="6"
-                    android:text="All Switch"
+                    android:text="Master Switch"
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:textColor="#660099"

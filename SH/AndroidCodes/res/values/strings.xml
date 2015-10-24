@@ -4,5 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Green Hackers Smart Home System</string>
+    <string name="title_activity_splash"></string>
+    <string name="title_activity_pass">Green Hackers Smart Home System</string>
 
 </resources>
